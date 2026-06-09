@@ -41,7 +41,7 @@ hl.window_rule({
   name = "clipse-gui",
   float = true,
   stay_focused = true,
-  move = { 580, 50 },
+  move = { "(monitor_w-800)/2", "50" },
   size = { 800, 400 },
   match = { class = "^(clipse-gui)$" },
 })
