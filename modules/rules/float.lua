@@ -47,6 +47,13 @@ hl.window_rule({
 })
 
 hl.window_rule({
+  name = "file-roller-dialogs",
+  float = true,
+  center = true,
+  match = { class = "^(org\\.gnome\\.FileRoller)$", initial_title = "^(Extract|Add|Open|Properties|Delete|Rename|Compress)$" },
+})
+
+hl.window_rule({
   name = "prismlauncher",
   float = true,
   center = true,
