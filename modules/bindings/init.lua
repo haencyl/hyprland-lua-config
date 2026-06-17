@@ -6,7 +6,7 @@ local mainMod = "SUPER"
 local terminal = "kitty"
 local browser = "brave-nightly"
 local fileManager = "nautilus"
-local menu = "qs -c noctalia-shell ipc call launcher toggle"
+local menu = "noctalia msg panel-toggle launcher"
 local floatingTerminal = "uwsm app -- kitty --class floating-terminal -e bash -c"
 
 return {
