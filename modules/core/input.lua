@@ -19,3 +19,8 @@ hl.config({
     scroll_factor = 1.0,
   },
 })
+
+hl.device({
+  name = "steelseries-steelseries-aerox-9-wireless",
+  sensitivity = 0
+})
