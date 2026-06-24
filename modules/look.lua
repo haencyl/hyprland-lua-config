@@ -41,9 +41,8 @@ hl.config({
 
 -- Animations
 
-hl.curve("ease", { type = "bezier", points = {{0.2, 0.9}, {0.2, 1.0}} })
+hl.curve("ease", { type = "bezier", points = { { 0.2, 0.9 }, { 0.2, 1.0 } } })
 
-hl.animation({ leaf = "windows", enabled = true, speed = 5, bezier = "ease", style = "slide" })
-hl.animation({ leaf = "border", enabled = true, speed = 10, bezier = "ease" })
+hl.animation({ leaf = "windows", enabled = true, speed = 5, bezier = "ease", style = "popin" })
 hl.animation({ leaf = "fade", enabled = true, speed = 5, bezier = "ease" })
-hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "ease", style = "slide" })
+hl.animation({ leaf = "workspaces", enabled = true, speed = 5, bezier = "ease", style = "slidevert" })
