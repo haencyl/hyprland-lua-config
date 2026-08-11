@@ -47,3 +47,11 @@ hl.window_rule({
   idle_inhibit = "fullscreen",
   match = { class = "steam" },
 })
+
+-- No Transparency
+
+hl.window_rule({
+  name = "no-transparency",
+  opacity = "1.0 override 1.0 override",
+  match = { class = "^(brave.*|discord.*|steam|org.gnome.Loupe|io.github.celluloid_player.Celluloid|org.gnome.gitlab.YaLTeR.VideoTrimmer|gimp)$" },
+})

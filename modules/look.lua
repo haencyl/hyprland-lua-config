@@ -12,13 +12,18 @@ hl.config({
 
   decoration = {
     rounding = 12,
+    active_opacity = 0.85,
+    inactive_opacity = 0.85,
     blur = {
       enabled = true,
-      size = 6,
+      size = 12,
       passes = 2,
       new_optimizations = true,
       special = true,
       xray = true,
+      noise = 0.02,
+      contrast = 1.0,
+      brightness = 1.2,
     },
   },
 
