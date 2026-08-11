@@ -16,7 +16,7 @@ require('modules.rules.general')
 require('modules.rules.float')
 require('modules.rules.misc')
 require('modules.rules.app')
-require("noctalia")
+require("noctalia").apply_theme()
 
 hl.config({
   plugin = {
