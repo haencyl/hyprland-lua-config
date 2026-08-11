@@ -30,7 +30,6 @@ hl.bind(vars.mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }), { de
 
 hl.bind(vars.mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }), { description = "Toggle Fullscreen" })
 hl.bind(vars.mainMod .. " + SHIFT + D", hl.dsp.dpms("toggle"), { description = "Toggle DPMS" })
-hl.bind(vars.mainMod .. " + L", hl.dsp.exec_cmd("wayscriber --daemon-toggle"), { description = "Toggle Annotation" })
 hl.bind(vars.mainMod .. " + SHIFT + M", hl.dsp.window.move({ monitor = "+1" }), { description = "Move Window to Next Monitor" })
 -- Mouse binds
 
