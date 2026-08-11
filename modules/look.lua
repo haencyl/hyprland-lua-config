@@ -36,6 +36,7 @@ hl.config({
     disable_hyprland_logo = true,
     disable_splash_rendering = true,
     focus_on_activate = true,
+    on_focus_under_fullscreen = 1,
   },
 })
 
