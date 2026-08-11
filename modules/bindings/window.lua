@@ -29,6 +29,7 @@ hl.bind(vars.mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }), { de
 -- Screen state
 
 hl.bind(vars.mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }), { description = "Toggle Fullscreen" })
+hl.bind(vars.mainMod .. " + BACKSPACE", hl.dsp.window.set_prop({ prop = "opaque", value = "toggle" }), { description = "Toggle Window Transparency" })
 hl.bind(vars.mainMod .. " + SHIFT + D", hl.dsp.dpms("toggle"), { description = "Toggle DPMS" })
 hl.bind(vars.mainMod .. " + SHIFT + M", hl.dsp.window.move({ monitor = "+1" }), { description = "Move Window to Next Monitor" })
 -- Mouse binds
