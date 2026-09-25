@@ -36,3 +36,7 @@ hl.bind(vars.mainMod .. " + SHIFT + M", hl.dsp.window.move({ monitor = "+1" }), 
 
 hl.bind(vars.mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true, description = "Drag Window" })
 hl.bind(vars.mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true, description = "Resize Window" })
+
+-- Pass-through
+
+hl.bind("F6", hl.dsp.pass({ window = "class:^(com.txyz.mach)$" }), { description = "Pass F6 to Mach" })
