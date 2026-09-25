@@ -64,6 +64,7 @@ hl.window_rule({
 hl.window_rule({
   name = "resources",
   float = true,
+  center = true,
   size = { 1400, 700 },
-  match = { class = "^(io.missioncenter.MissionCenter)$" },
+  match = { class = "^btop$" },
 })

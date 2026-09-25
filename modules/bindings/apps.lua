@@ -10,4 +10,4 @@ hl.bind(vars.mainMod .. " + V", hl.dsp.exec_cmd("noctalia msg panel-toggle clipb
 hl.bind(vars.mainMod .. " + W", hl.dsp.exec_cmd(vars.browser), { description = "Browser" })
 hl.bind(vars.mainMod .. " + M", hl.dsp.exec_cmd("spotify"), { description = "Music" })
 hl.bind(vars.mainMod .. " + N", hl.dsp.exec_cmd("zeditor"), { description = "Editor" })
-hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("missioncenter"), { description = "Task Manager" })
+hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd("~/.local/bin/system-monitor"), { description = "Task Manager" })
