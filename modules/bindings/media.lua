@@ -16,9 +16,9 @@ hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("noctalia msg media toggle"), { locked 
 
 -- Screenshots
 
-hl.bind("CTRL + PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-fullscreen pick"), { description = "Screenshot Fullscreen" })
+hl.bind("CTRL + PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-annotate"), { description = "Screenshot Annotate" })
 hl.bind("PRINT", hl.dsp.exec_cmd("noctalia msg screenshot-region"), { description = "Screenshot Region" })
-hl.bind(vars.mainMod .. " + PRINT", hl.dsp.exec_cmd("pkill hyprpicker || hyprpicker -a"), { description = "Color Picker" })
+hl.bind(vars.mainMod .. " + PRINT", hl.dsp.exec_cmd("pkill hyprpicker || hyprpicker | wl-copy"), { description = "Color Picker" })
 
 -- Zoom
 
