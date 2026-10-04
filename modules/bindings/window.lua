@@ -16,7 +16,7 @@ hl.bind("ALT + SHIFT + TAB", function()
   hl.dispatch(hl.dsp.window.cycle_next({ next = false }))
   hl.dispatch(hl.dsp.window.alter_zorder({ mode = "top" }))
 end, { description = "Cycle Windows (Back)" })
-hl.bind("SUPER + TAB", hl.plugin.gloview.toggle, { description = "Toggle Workspace Overview"})
+hl.bind("SUPER + TAB", hl.plugin.scrolloverview.overview("toggle all"), { description = "Toggle Workspace Overview"})
 
 hl.bind(vars.mainMod .. " + left", hl.dsp.focus({ direction = "left" }), { description = "Focus Left" })
 hl.bind(vars.mainMod .. " + right", hl.dsp.focus({ direction = "right" }), { description = "Focus Right" })
