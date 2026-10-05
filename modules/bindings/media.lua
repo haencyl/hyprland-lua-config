@@ -22,15 +22,20 @@ hl.bind(vars.mainMod .. " + PRINT", hl.dsp.exec_cmd("pkill hyprpicker || hyprpic
 
 -- Zoom
 
-local function adjust_zoom(delta)
-  local current = hl.get_config("cursor.zoom_factor") or 1
-  local new = math.max(current + delta, 1)
-  hl.config({ cursor = { zoom_factor = new } })
+local ZOOM_MIN, ZOOM_MAX = 1, 40
+
+local function set_zoom(factor)
+  hl.config({ cursor = { zoom_factor = math.floor(factor + 0.5) } })
 end
 
-hl.bind(vars.mainMod .. " + plus", function() adjust_zoom(0.5) end, { repeating = true, description = "Zoom In" })
-hl.bind(vars.mainMod .. " + minus", function() adjust_zoom(-0.5) end, { repeating = true, description = "Zoom Out" })
-hl.bind(vars.mainMod .. " + 0", function() hl.config({ cursor = { zoom_factor = 1 } }) end, { description = "Zoom Reset" })
+local function adjust_zoom(delta)
+  local current = hl.get_config("cursor.zoom_factor") or ZOOM_MIN
+  set_zoom(math.min(math.max(current + delta, ZOOM_MIN), ZOOM_MAX))
+end
+
+hl.bind(vars.mainMod .. " + plus", function() adjust_zoom(1) end, { repeating = true, description = "Zoom In" })
+hl.bind(vars.mainMod .. " + minus", function() adjust_zoom(-1) end, { repeating = true, description = "Zoom Out" })
+hl.bind(vars.mainMod .. " + 0", function() set_zoom(ZOOM_MIN) end, { description = "Zoom Reset" })
 
 -- Pass-through keys
 

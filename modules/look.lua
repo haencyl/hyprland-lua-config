@@ -42,6 +42,10 @@ hl.config({
     explicit_column_widths = "0.333, 0.5, 0.667, 1.0",
   },
 
+  cursor = {
+    zoom_disable_aa = true
+  },
+
   misc = {
     force_default_wallpaper = 0,
     disable_hyprland_logo = true,
