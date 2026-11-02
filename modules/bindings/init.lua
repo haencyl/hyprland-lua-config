@@ -2,6 +2,8 @@
 -- SHARED VARS --
 -----------------
 
+local smw = require("plugins.split-monitor-workspaces")
+
 local mainMod = "SUPER"
 local terminal = "kitty"
 local browser = "brave-nightly"
@@ -16,4 +18,5 @@ return {
   fileManager = fileManager,
   menu = menu,
   floatingTerminal = floatingTerminal,
+  smw = smw
 }
