@@ -7,7 +7,7 @@ local smw = require("plugins.split-monitor-workspaces")
 local mainMod = "SUPER"
 local terminal = "kitty"
 local browser = "brave-nightly"
-local fileManager = "nautilus"
+local fileManager = "strata"
 local menu = "noctalia msg panel-toggle launcher"
 local floatingTerminal = "uwsm app -- kitty --class floating-terminal -e bash -c"
 

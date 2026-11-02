@@ -4,7 +4,7 @@
 
 local vars = require("modules.bindings.init")
 
-hl.bind(vars.mainMod .. " + E", hl.dsp.exec_cmd("uwsm app -- " .. vars.fileManager .. " --new-window"), { description = "File Manager" })
+hl.bind(vars.mainMod .. " + E", hl.dsp.exec_cmd("uwsm app -- " .. vars.fileManager), { description = "File Manager" })
 hl.bind(vars.mainMod .. " + Return", hl.dsp.exec_cmd(vars.terminal), { description = "Terminal" })
 hl.bind(vars.mainMod .. " + V", hl.dsp.exec_cmd("noctalia msg panel-toggle clipboard"), { description = "Clipboard Manager" })
 hl.bind(vars.mainMod .. " + W", hl.dsp.exec_cmd(vars.browser), { description = "Browser" })
