@@ -15,13 +15,13 @@ hl.bind(vars.mainMod .. " + adiaeresis", hl.dsp.layout("colresize +0.1"), { repe
 hl.bind(vars.mainMod .. " + SHIFT + J", hl.dsp.layout("promote"), { description = "Promote Window to Own Column" })
 hl.bind(vars.mainMod .. " + SHIFT + H", hl.dsp.layout("fit active"), { description = "Fit Focused Column" })
 hl.bind(vars.mainMod .. " + SHIFT + L", hl.dsp.layout("fit all"), { description = "Fit All Columns" })
+
 hl.bind("ALT + TAB", function()
   hl.dispatch(hl.dsp.exec_cmd("noctalia msg window-switcher hold"))
 end, { description = "Cycle Windows" })
 hl.bind("ALT + SHIFT + TAB", function()
   hl.dispatch(hl.dsp.exec_cmd("noctalia msg window-switche hold"))
 end, { description = "Cycle Windows (Back)" })
-hl.bind("SUPER + TAB", hl.plugin.scrolloverview.overview("toggle all"), { description = "Toggle Workspace Overview"})
 
 hl.bind(vars.mainMod .. " + left", hl.dsp.focus({ direction = "left" }), { description = "Focus Left" })
 hl.bind(vars.mainMod .. " + right", hl.dsp.focus({ direction = "right" }), { description = "Focus Right" })
@@ -37,6 +37,7 @@ hl.bind(vars.mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen" }
 hl.bind(vars.mainMod .. " + BACKSPACE", hl.dsp.window.set_prop({ prop = "opaque", value = "toggle" }), { description = "Toggle Window Transparency" })
 hl.bind(vars.mainMod .. " + SHIFT + D", hl.dsp.dpms("toggle"), { description = "Toggle DPMS" })
 hl.bind(vars.mainMod .. " + SHIFT + M", hl.dsp.window.move({ monitor = "+1" }), { description = "Move Window to Next Monitor" })
+
 -- Mouse binds
 
 hl.bind(vars.mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true, description = "Drag Window" })
