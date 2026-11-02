@@ -14,16 +14,16 @@ hl.config({
     rounding = 12,
     active_opacity = 1.0,
     inactive_opacity = 1.0,
+    fullscreen_opacity = 1.0,
+    wobble = {
+      enabled = true,
+    },
     blur = {
       enabled = true,
-      size = 6,
-      passes = 5,
+      variant = "drops",
       new_optimizations = true,
       special = true,
       xray = true,
-      noise = 0.02,
-      contrast = 1.0,
-      brightness = 1.2,
     },
   },
 
