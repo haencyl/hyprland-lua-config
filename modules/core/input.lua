@@ -24,3 +24,8 @@ hl.device({
   name = "steelseries-steelseries-aerox-9-wireless",
   sensitivity = 0
 })
+
+hl.device({
+  name = "sunshine-ps5-(virtual)-pad-touchpad",
+  enabled = false
+})
